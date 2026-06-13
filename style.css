@@ -133,6 +133,14 @@ button,
         border-radius: 24px;
         padding: 1.25rem !important;
     }
+
+    h2, h3 {
+    word-break: break-word;
+    }
+
+    .font-anime {
+    line-height: 1.4;
+    }
     
     .message-bubble:hover {
         transform: none; /* Disable hover effect on mobile */
