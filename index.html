@@ -675,7 +675,11 @@ function createFloatingHeart() {
 }
 
 // Automatically create floating emojis
-setInterval(createFloatingHeart, 600);
+if (window.innerWidth < 768) {
+    setInterval(createFloatingHeart, 1200);
+} else {
+    setInterval(createFloatingHeart, 600);
+}
   
   // Horizontal scroll for hall of fame
   const scroller = document.getElementById('hall-of-fame-scroller');
