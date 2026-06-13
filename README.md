@@ -10,11 +10,6 @@ A special birthday website created with love and appreciation for someone very s
 * Responsive design 📱💻
 * Personalized messages 💖
 
-## 🚀 Live Demo
-
-Visit the website:
-https://chakri31089.github.io/Happy-Birthday-Nithya/
-
 ## 🛠️ Technologies Used
 
 * HTML5
@@ -37,12 +32,6 @@ Happy-Birthday-Nithya/
 ## ❤️ About
 
 This project was created as a heartfelt birthday surprise to celebrate a wonderful person and make her special day even more memorable.
-
-## 👨‍💻 Author
-
-**Nagiripati Chakradhar Varma**
-
-GitHub: https://github.com/Chakri31089
 
 ---
 
