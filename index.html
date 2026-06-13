@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Happy Birthday & Wedding Wishes 🌸</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sakura: '#ff7b89',
+            navy: '#1a2a3a',
+            rosegold: '#e8b4b8',
+            wedding: '#d4af7a',
+          },
+          fontFamily: {
+            'anime': ['Mochiy Pop One', 'cursive'],
+            'poppins': ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- AOS Animation & LightGallery -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css" />
+
+  <!-- Google Fonts: Anime style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    #sakura-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      background: linear-gradient(135deg, #fff9f7 0%, #fff0f0 100%);
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .message-bubble {
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 48px;
+      box-shadow: 0 25px 45px -12px rgba(0,0,0,0.2);
+    }
+    .wedding-glow {
+      box-shadow: 0 0 20px rgba(212, 175, 106, 0.3);
+    }
+    .floating-heart {
+      position: fixed;
+      font-size: 1.8rem;
+      animation: floatUp 4s ease-out forwards;
+      pointer-events: none;
+      z-index: 999;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(-250px) scale(1.2) rotate(15deg); opacity: 0; }
+    }
+    .apology-badge {
+      background: linear-gradient(135deg, #f5e6d3, #ffd9c5);
+    }
+    /* Hidden music player - completely invisible but functional */
+    .hidden-music-control {
+      display: none !important;
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="sakura-canvas"></canvas>
+
+<!-- Background Music: Hidden auto-play -->
+<audio id="bg-music" loop autoplay>
+  <source src="https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0e2c2e6f2.mp3?filename=romantic-piano-251184.mp3" type="audio/mpeg">
+  <source src="img/nithya.mpeg" type="audio/mpeg">
+</audio>
+
+<!-- Hero Section - Text Moved Down -->
+<header class="h-screen relative flex items-end justify-center text-white overflow-hidden pb-32">
+  <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat z-[-1]" style="background-image: url('img/4T9A2646.JPG.jpg');"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70 z-[-1]"></div>
+  <div class="text-center z-20 p-4" data-aos="fade-in" data-aos-duration="1500">
+    <h2 class="text-3xl md:text-5xl font-anime drop-shadow-lg leading-tight">Happy Birthday Nithya🩷💫</h2>
+    <!-- <h2 class="mt-4 text-3xl md:text-5xl font-anime drop-shadow-lg leading-tight">Congratulations on your wedding!🥹❤️</h2> -->
+        <p class="mt-4 text-xl md:text-2xl font-semibold max-w-8xl mx-auto">"Some bonds don't need daily conversations 💬🌸 to stay alive; they live quietly in the heart ❤️, memories 🌷, prayers 🙏🤍, and moments that never fade away 💫. You'll always be one of my favorite pages 🥹❤️."</p>
+          </div>
+        </header>
+
+        <main class="container mx-auto p-6 md:p-12 relative z-10">
+
+          <!-- Section: Dual Celebration - Birthday + Wedding with Apology -->
+          <section class="my-16 md:my-24 max-w-4xl mx-auto" data-aos="fade-up">
+            <div class="message-bubble p-8 md:p-12 border border-rose-200">
+              <div class="text-center mb-6">
+                <!-- <span class="text-6xl">🎂💍</span> -->
+                <h3 class="text-3xl md:text-3xl font-anime text-sakura mt-2">My Dear Special One, Nithya🩷💫</h3>
+        <p class="text-sm text-gray-700 mt-2"><strong>Your first birthday after marriage — a beautiful new chapter and a special day to celebrate 🎂💍✨</strong></p>
+              </div>
+              <div class="text-lg md:text-xl leading-relaxed space-y-5 text-gray-700">
+
+                <p class="text-justify mb-4">
+        <p class="text-justify mb-5">
+                <span class="text-3xl mr-2"></span>
+                <strong class="text-rose-500 text-lg md:text-xl">Happy Birthday to my forever Favourite Human!</strong> 🩷✨
+                May your special day be filled with <strong>endless smiles</strong> 😊🌸, <strong>beautiful surprises</strong> 🎁✨, <strong>sweet memories</strong> 🌷💖, and <strong>all the happiness your heart can hold</strong> 🥹❤️.
+                <br><br>
+                You deserve a life full of 
+                <strong class="text-gray-700">love 💞, laughter 😂✨, peace 🕊️, and dreams coming true 🌈💫.</strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-blue-700">This birthday feels even more special because it's your very first birthday after marriage 💍🏡✨.</strong>
+                <br><br>
+                Seeing you happy in <strong>this beautiful new chapter of your life</strong> fills my heart with 
+                <strong class="text-rose-500">happiness 😊, peace 🕊️, and countless emotions</strong> 🥹❤️🌸.
+                <br><br>
+                At the same time, I also want to
+                <strong class="text-gray-700">congratulate both you and Vineeth bro 🤵🏻💙 on your beautiful journey together 💍💖✨.</strong>
+                <br><br>
+                May your married life always be filled with <strong>endless love</strong> 💞, <strong>understanding</strong> 🤝🏻, <strong>trust</strong> 🤍, <strong>laughter</strong> 😂✨, <strong>peace</strong> 🕊️, <strong>prosperity</strong> 🌟, and <strong>countless beautiful memories</strong> 📸🌈.
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-blue-700">Honestly, I don't even know where to start because there are so many emotions in my heart right now 😔❤️🥹.</strong>
+                <br><br>
+                First of all, <strong>I'm truly, genuinely, and wholeheartedly happy for you</strong> 🥹💞💕.
+                <br><br>
+                <strong class="text-rose-500">You deserve every bit of love 💖, care 🤗, happiness 😇, peace 🕊️, blessings 🙏🏻✨, and magical moments 🌈💫 that life can ever give.</strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-blue-700">No matter how much time passes ⏳🌸, you'll always remain someone very special to me ❤️😌🌷.</strong>
+                <br><br>
+                Some people enter our lives <strong>quietly and become unforgettable without even realizing it</strong> 🥹❤️✨,
+                <strong class="text-rose-500">and you have always been one of those people for me.</strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-gray-700">There are certain people whose happiness genuinely matters to us 😊💖, and whenever we see them smile, our heart automatically feels lighter 🥹✨.</strong>
+                <br><br>
+                <strong class="text-blue-700">You have always been one of those rare people for me 🌷❤️.</strong>
+                <br><br>
+                Seeing your smile 😊💕 has always brought me happiness, and today, seeing you celebrate <strong>your birthday and this beautiful new chapter of life</strong> fills my heart with <strong>both emotion 😭❤️ and joy 🥹🤍</strong>.
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-rose-500">Sometimes, certain people become so special to us that their absence is felt more than their presence is ever spoken about 🥹❤️✨.</strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                There are moments when <strong>old conversations</strong> 💬💕, <strong>memories</strong> 📸🌷, and <strong>simple little things</strong> unexpectedly bring a smile 😊🤍 and at the same time leave a small ache in the heart 😔💔.
+                <br><br>
+                <strong class="text-rose-500">Some people may move forward into a new chapter of life 📖💍✨, but the place they hold in someone's heart never really changes ❤️🌸.</strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-gray-700">No matter how much time passes ⏳✨, some people continue to be remembered in prayers 🙏🏻🤍, in memories 💭💕, and in those quiet moments when words are not enough to explain what the heart feels 🥹💫.</strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-blue-700">You are one of those people, ammai ❤️🌷✨.</strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-blue-700">Some bonds don't need daily conversations 💬✨ to stay alive;</strong>
+                they live <strong>quietly in the heart</strong> ❤️🥹, hidden in <strong>memories</strong> 🌷, <strong>prayers</strong> 🙏🏻🤍, and <strong>little moments that never fade away</strong> 💫.
+                <br><br>
+                <strong class="text-rose-500">And though you're living a beautiful new chapter of life now 💍📖🌸, you'll always be one of my favorite pages 🥹❤️✨.</strong>
+            </p>
+
+            <!-- apology section -->
+            <div class="apology-badge p-6 rounded-2xl border-l-8 border-rose-600 my-7">
+                <p class="italic text-justify text-gray-800">
+                    <strong class="text-1xl text-darkblue-700">A Note From My Heart:</strong>
+                    <strong class="text-rose-500">I'm really very sorry for not being able to attend your marriage 😔🙏💔🥺.</strong>
+                    <!-- <br><br> -->
+                    Trust me, <strong>it hurts me more than I can explain</strong> because somewhere deep inside 💔🥹, <strong>I truly wanted to see you on your special day</strong> 👰🏻✨🌸, smiling happily with all your heart 😊💞.
+                    <!-- <br><br> -->
+                    <strong class="text-rose-500">Even though I wasn't there physically 🚶🏻‍♂️❌, my thoughts 💭❤️, prayers 🙏🏻✨, and heart 💖 were completely with you the whole time 💫🤍.</strong>
+                    <!-- <br><br> -->
+                    I silently prayed that <strong>your new journey should always be filled with endless happiness</strong> 😊💕, <strong>understanding</strong> 🤝🏻✨, <strong>trust</strong> 🤍🌷, and <strong>unconditional love</strong> ❤️♾️.
+                </p>
+            </div>
+
+            <p class="text-justify mb-5">
+                <strong class="text-black-700">Life doesn't always take us in the direction we imagine 🌍✨, but there are certain people whose smiles 😊🌸 we will always cherish and whose happiness we will always pray for 🙏🏻💖.</strong>
+                <br><br>
+                <strong class="text-blue-700">You are one of those rare people whose presence left a beautiful mark on my life ❤️✨🌷.</strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-black-700">Among all the people in my life, after my family 👨‍👩‍👧‍👦❤️, you became one of the most important persons to me. 🥹💖✨ You unknowingly created a special place in my heart 💕🫶 that no one else can replace. 💖🥺💫</strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-black-700"> Now, whenever I think that you may be far away 🌍💭 or busy with your new life 💍👰‍♀️, my heart feels a little heavy. 😔💔🥺</strong>
+                It's not because I'm not happy for you—I'm genuinely happy for your happiness. 🥹💞✨ <strong class= "text-blue-700">It's just that the thought of slowly losing touch with someone who means so much to me is difficult to accept. 💔🥺 </strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-blue-700"> If you ever get even a small free moment ⏳✨, please send me a text. 📱💬💕 Even a simple "Hi" from you would make me smile. 🥹 ❤️‍🩹</strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-blue-700"> And finally, I have only one request, Ammai... 🥺🤍</strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-blue-700">please don't ever forget me in your life. 🥺❤️‍🩹✨</strong>
+                <br><br>
+                No matter where life takes you 🌍✨, no matter how busy life becomes after marriage 💍🏡,
+                <strong class="text-rose-500">I just hope somewhere in your heart ❤️ there will always be a tiny place for this person who genuinely cared for you a lot 🥹🤍✨.</strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-black-700">Maybe not every feeling needs to be spoken aloud 🤐💭, and maybe some emotions are best kept quietly in the heart ❤️🥹.</strong>
+                <br><br>
+                But one thing I want you to know is that <strong>I will always wish the very best for you</strong> 🌷💖✨, <strong>today and always</strong> 🤍♾️.
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-blue-700">Seeing you happy 😊💞 genuinely makes me happy 🥹❤️, and that will never change 🌸✨.</strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                Whenever life feels difficult 😔🌧️, whenever you need someone to listen 👂🏻❤️, support you 🤝🏻💖, or simply stand beside you silently 🫂✨,
+                <strong class="text-blue-700">I'll always be there as a well-wisher who genuinely cares 🥹🤍.</strong>
+            </p>
+<br><br>
+
+            <p class="text-xl text-center mb-5">
+                <strong class="text-blue-700">Congratulations on this beautiful new chapter of your life Ammai! 🥹❤️</strong>
+            </p>
+
+            <p class="text-xl text-justify mb-5">
+                Wishing you both <strong>a lifetime filled with endless love</strong> 💞, <strong>happiness</strong> 😊🌸, <strong>understanding</strong> 🤝✨, and <strong>togetherness</strong> ❤️♾️.
+                <br><br>
+                May your home always be filled with <strong>warmth</strong> 🏡🤍, <strong>laughter</strong> 😂🌷, <strong>peace</strong> 🕊️✨, and <strong>countless beautiful memories</strong> 📸💖.
+                <br><br>
+                May you <strong>support each other through every challenge</strong> 💪🏻🤝, <strong>celebrate every success together</strong> 🎉🌟, and <strong>continue to grow stronger with every passing day</strong> 🌸💫.
+                <br><br>
+                <strong class="text-rose-500">May your journey be blessed with trust 🤍, care 🫶🏻, prosperity 🌈✨, and all the little moments that make life truly beautiful 🥹💕.</strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-blue-700">And through all this — through the birthday candles 🎂✨ and wedding bells 💍🔔 — there's something my heart has always quietly carried ❤️🥹.</strong>
+                <br><br>
+                <strong class="text-blue-700">Some people leave footprints in our lives that time can never erase 🌷✨.</strong>
+                <br><br>
+                Even as you begin <strong>this beautiful new chapter of life</strong> 💍🏡, <strong>old memories</strong> 📸💕, <strong>familiar conversations</strong> 💬🌸, and <strong>simple thoughts</strong> still bring a smile 😊❤️ and remind me <strong>how special some people will always be</strong>.
+                <br><br>
+                <strong class="text-rose-500">Perhaps not every feeling needs words 🥹✨; some things simply remain in our prayers 🙏🏻🤍, our memories 🌷💫, and in that quiet corner of the heart ❤️ that time can never change.</strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-blue-700">And Vineeth Bro 😄💙, take good care of our Special Person Ammai ❤️✨.</strong>
+                <br><br>
+                <strong>Keep her smiling always</strong> 😊🌸💕, <strong>protect her heart</strong> 🫶🏻❤️, and <strong>stand beside her through every phase of life</strong> 🤝🏻💍💖.
+                <br><br>
+                <strong class="text-blue-700">She deserves the purest love 🤍✨ and the happiest life 😇🌈💫.</strong>
+                <br><br>
+                And remember bro 😅🔥, if you ever hurt her…
+                <strong class="text-blue-700">I'm always behind her like a strong backup 💪🏻❤️😂😎.</strong>
+            </p>
+
+            <p class="text-justify mb-5">
+                <strong class="text-rose-500">Once again, Happy Birthday, Ammai 🎂👸🩷✨, and congratulations to both of you on your beautiful journey together 💍🥳🎉✨.</strong>
+            </p>
+
+            <p class="text-justify mb-6">
+                May this year bring you <strong>countless reasons to smile</strong> 😊🌷, <strong>dreams that come true</strong> 🌟✨, <strong>peaceful moments</strong> 🕊️🤍, <strong>beautiful memories</strong> 📸💖, and <strong>a heart full of happiness every single day</strong> 💞🌸.
+            </p>
+
+            <br><br>
+
+            <p class="text-2xl text-center mb-6">
+                <strong class="text-rose-500">Stay happy always, Ammai ❤️✨</strong>
+            </p>
+
+            <p class="text-center text-xl md:text-2xl my-5">
+                <strong class="text-rose-500">💌 May your birthday be as radiant as your smile, and your marriage be as timeless as the stars. 💌</strong>
+            </p>
+
+            <hr class="divider my-6">
+
+            <p class="text-right mt-5 text-lg leading-relaxed">
+                <strong>With a special place in my heart, countless prayers, wishes for your happiness always,</strong><br>
+                <span class="text-rose-500 text-lg font-bold">Your forever well-wisher ❤️‍🩹💫</span>
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Wedding Wishes Gallery + Memory Lane -->
+  <section class="my-16 md:my-24">
+    <h2 class="text-4xl md:text-5xl font-anime text-center mb-4" data-aos="fade-up">For the Special One 👸💖</h2>
+    <p class="text-center text-pink-700 text-lg mb-12" data-aos="fade-up"><strong>Wrapped in love, smiles, and beautiful memories ✨🌸</strong></p>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-2xl shadow-xl text-center" data-aos="flip-left">
+        <span class="text-5xl">🎂</span>
+        <h3 class="text-2xl font-anime text-sakura mt-2">A Day Just for You</h3>
+        <p class="mt-3"><strong>May your birthday be filled with endless happiness 😊💞, sweet surprises 🎁✨, countless moments that make your heart smile 🥹❤️.</strong></p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-xl text-center" data-aos="flip-left" data-aos-delay="100">
+        <span class="text-5xl">🌷</span>
+        <h3 class="text-2xl font-anime text-sakura mt-2">A Beautiful New Chapter</h3>
+        <p class="mt-3"><strong>As you celebrate your first birthday after marriage 💍🏡✨, may this new phase of life bring you love 💖, peace 🕊️, understanding 🤝, and memories you'll cherish forever 📸🌸.</strong></p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-xl text-center" data-aos="flip-left" data-aos-delay="200">
+        <span class="text-5xl">🌟</span>
+        <h3 class="text-2xl font-anime text-sakura mt-2">Dreams & Happiness</h3>
+        <p class="mt-3"><strong>May all your dreams find their way to reality 🌈✨, your days be filled with laughter 😂💫, and your heart always remain as beautiful and kind as it is today ❤️🌷.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Our Timeline (with subtle apology) -->
+  <section class="my-16 md:my-24">
+    <h2 class="text-4xl md:text-5xl font-anime text-center mb-12" data-aos="fade-up">🎂 Beautiful Memories & Birthday Wishes</h2>
+    <p class="text-center text-rose-400 text-2xl -mt-6 mb-10"><strong>Moments I'll always cherish and celebrate ✨🌸</strong></p>
+    <div class="space-y-16">
+      <div class="flex flex-col md:flex-row items-center gap-8" data-aos="fade-right">
+<img src="img/IMG-20250613-WA0005.jpg.jpg"
+     alt="Nithya"
+     class="w-full max-w-md rounded-lg shadow-xl border-4 border-white h-auto mx-auto">
+        <div class="text-center md:text-left">
+          <h3 class="text-4xl font-anime text-sakura"><strong>✨ The Memories We Shared</strong></h3>
+          <p class="mt-2 text-2xl"><strong>From our conversations 💬💕 and laughter 😂🌷 to all the little moments that made life brighter ✨, every memory remains special and close to my heart ❤️🥹.</strong></p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8" data-aos="fade-left">
+<img src="img\4T9A2606.JPG.jpg"
+     alt="Nithya"
+     class="w-full max-w-md rounded-lg shadow-xl border-4 border-white h-auto mx-auto">
+        <div class="text-center md:text-right">
+          <h3 class="text-4xl font-anime text-sakura"><strong>💌 A Place That Never Changes</strong></h3>
+          <p class="mt-2 text-2xl"><strong>Some people become a part of our lives in ways words can never fully explain 🌸✨. No matter how much time passes ⏳🤍, their place remains untouched, living quietly in memories 💭💕 and prayers 🙏🏻🌷.</strong></p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center gap-8" data-aos="fade-right">
+<img src="img\IMG-20250530-WA00147.jpg.jpg"
+     alt="Nithya"
+     class="w-full max-w-md rounded-lg shadow-xl border-4 border-white h-auto mx-auto">
+        <div class="text-center md:text-left">
+          <h3 class="text-4xl font-anime text-sakura"><strong>🎀 Celebrating You, Always</strong></h3>
+          <p class="mt-2 text-2xl"><strong>Today is all about celebrating you 👸💖✨ — your kindness 🤍, your beautiful heart ❤️, your smile 😊🌸, and the happiness you bring to those around you. May this birthday be filled with love 💞, laughter 😂✨, beautiful surprises 🎁🌷, and memories you'll treasure forever 📸💫.</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Hall of Fame (Anime Love Tribute) -->
+  <section class="my-16 md:my-24">
+    <h2 class="text-4xl md:text-5xl font-anime text-center mb-12" data-aos="fade-up"> For Our Birthday Queen💖✨</h2>
+    <div class="relative">
+      <button id="scroll-left-btn" class="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-rose-100 rounded-full p-2 shadow-md transition-all opacity-0 md:opacity-100">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sakura" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+      </button>
+      <button id="scroll-right-btn" class="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-rose-100 rounded-full p-2 shadow-md transition-all opacity-0 md:opacity-100">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sakura" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+      </button>
+      <div id="hall-of-fame-scroller" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide p-4 -mx-4">
+        <div class="flex snap-x snap-mandatory gap-8">
+         
+          <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
+              <!-- Change the image -->
+              <img src="img/4T9A24081.JPG.jpg" alt="Nithya" class="w-full h-80 object-cover rounded-md mb-4">
+              <h3 class="text-xl font-anime text-sakura">🌸 A Day Just for You</h3>
+              <p class="mt-2"><strong>"Today is all about celebrating the wonderful person you are and the happiness you bring to everyone around you!"</strong></p>
+            </div>
+          </div>
+
+          <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
+              <!-- Change the image -->
+              <img src="img/4T9A2646.JPG.jpg" alt="Nithya" class="w-full h-80 object-cover rounded-md mb-4">
+              <h3 class="text-1xl font-anime text-sakura">✨ First Birthday After Marriage</h3>
+              <p class="mt-2"><strong>"Your smile shines even brighter as you celebrate this special birthday in a beautiful new phase of life."</strong></p>
+            </div>
+          </div>
+
+          <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
+              <!-- Change the image -->
+              <img src="img/4T9A261406.JPG.jpg" alt="Nithya" class="w-full h-80 object-cover rounded-md mb-4">
+              <h3 class="text-1xl font-anime text-sakura">🎁 Dreams & Happiness</h3>
+              <p class="mt-2"><strong>"May every candle on your cake carry a dream, and may every dream find its way to reality."</strong></p>
+            </div>
+          </div>
+
+          <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
+              <!-- Change the image -->
+              <img src="img/IMG_20260525_1921440.jpg.jpg" alt="Nithya" class="w-full h-80 object-cover rounded-md mb-4">
+              <h3 class="text-1xl font-anime text-sakura">💖 Forever Special</h3>
+              <p class="mt-2"><strong>"No matter how many birthdays come and go, you'll always be someone truly special and deeply cherished."</strong></p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Wedding & Birthday Gallery with hidden messages -->
+  <section class="my-16 md:my-24">
+    <h2 class="text-4xl md:text-5xl font-anime text-center mb-12" data-aos="fade-up">Through Memories & New Beginnings 🥹❤️</h2>
+    <p class="text-center text-rose-500 -mt-8 mb-12"><strong>(Every image tells a story of beautiful moments, birthday joy, and heartfelt wishes for the wonderful journey ahead.) 🌷✨❤️</strong></p>
+    <div id="lightgallery" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <a href="img/4T9A3167.JPG.jpg" data-aos="zoom-in" class="block relative group">
+        <img src="img/4T9A3167.JPG.jpg"
+         class="rounded-lg shadow-lg hover:scale-105 transition w-full h-48 md:h-64 object-cover border-4 border-white" alt="Beautiful Engagement Moment 💍✨">
+         <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs p-1 rounded opacity-0 group-hover:opacity-100">"Two hearts, one promise, and a beautiful forever beginning 💍❤️✨"</div>
+      </a>
+
+      <a href="img/4T9A3237.JPG.jpg" data-aos="zoom-in" class="block relative group">
+        <img src="img/4T9A3237.JPG.jpg"
+         class="rounded-lg shadow-lg hover:scale-105 transition w-full h-48 md:h-64 object-cover border-4 border-white" alt="Beautiful Engagement Moment 💍✨">
+         <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs p-1 rounded opacity-0 group-hover:opacity-100">"Celebrating love, laughter, and a journey that has just begun 🎂💕🌸"</div>
+      </a>
+      
+      <a href="img/_69A8673 (1).JPG.jpg" data-aos="zoom-in" class="block relative group">
+        <img src="img/_69A8673 (1).JPG.jpg"
+         class="rounded-lg shadow-lg hover:scale-105 transition w-full h-48 md:h-64 object-cover border-4 border-white" alt="A Beautiful Family Moment 🌸📸💖">
+         <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs p-1 rounded opacity-0 group-hover:opacity-100">"Surrounded by love, blessed by family, and cherished forever 🤍🙏🏻✨"</div>
+      </a>
+
+      <a href="img/_69A9049.JPG.jpg" data-aos="zoom-in" class="block relative group">
+        <img src="img/_69A9049.JPG.jpg"
+         class="rounded-lg shadow-lg hover:scale-105 transition w-full h-48 md:h-64 object-cover border-4 border-white" alt="A Beautiful Family Moment 🌸📸💖">
+         <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs p-1 rounded opacity-0 group-hover:opacity-100">"A moment filled with smiles, blessings, and memories to treasure forever 📸💖🌷"</div>
+      </a>
+
+      <a href="img/_69A8737.JPG.jpg" data-aos="zoom-in" class="block relative group">
+        <img src="img/_69A8737.JPG.jpg"
+         class="rounded-lg shadow-lg hover:scale-105 transition w-full h-48 md:h-64 object-cover border-4 border-white" alt="The Beginning of Forever 💍🥹❤️">
+         <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs p-1 rounded opacity-0 group-hover:opacity-100">"May this smile stay forever, and this happiness grow with every passing day 😊❤️✨"</div>
+      </a>
+
+      <a href="img/4T9A13724.JPG.jpg" data-aos="zoom-in" class="block relative group">
+        <img src="img/4T9A13724.JPG.jpg"
+         class="rounded-lg shadow-lg hover:scale-105 transition w-full h-48 md:h-64 object-cover border-4 border-white" alt="A Beautiful Brother & Sister Moment ✨">
+         <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs p-1 rounded opacity-0 group-hover:opacity-100">"A beautiful beginning, some moments are so beautiful that they deserve to be remembered forever 📸🥹💖"</div>
+      </a>
+
+      <a href="img/4T9A3955(1).JPG.jpg" data-aos="zoom-in" class="block relative group">
+        <img src="img/4T9A3955(1).JPG.jpg"
+         class="rounded-lg shadow-lg hover:scale-105 transition w-full h-48 md:h-64 object-cover border-4 border-white" alt="The Beginning of Forever 💍🥹❤️">
+         <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs p-1 rounded opacity-0 group-hover:opacity-100">"Wishing you a lifetime of happiness, love, and beautiful tomorrows 💞🌈✨"</div>
+      </a>
+
+      <a href="img/4T9A2646.JPG.jpg" data-aos="zoom-in" class="block relative group">
+        <img src="img/4T9A2646.JPG.jpg"
+         class="rounded-lg shadow-lg hover:scale-105 transition w-full h-48 md:h-64 object-cover border-4 border-white" alt="Forever Special ✨🤍">
+         <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs p-1 rounded opacity-0 group-hover:opacity-100">"Some moments pass, but the memories stay close to the heart forever 🥹🤍✨"</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="my-16 md:my-24" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto rounded-3xl shadow-2xl overflow-hidden bg-gradient-to-r from-rose-100 to-amber-50 p-8 md:p-12 text-center border-4 border-white">
+      
+      <!-- main sparkling heading from code2 -->
+      <h2 class="text-4xl md:text-5xl font-anime text-sakura mt-2 text-center leading-tight">
+        🎂💖 Happy Birthday & Endless Congratulations! 💖🥹✨🌸
+      </h2>
+
+      <!-- code2 inner content (with indirect love, missing her, all emotional layers) inside the finale card -->
+      <div class="my-6 text-base md:text-lg space-y-5 text-left">
+
+        <!-- paragraph 1: birthday and new chapter blessings -->
+        <p class="text-justify">
+          <strong>💗 To one of the most special people in my life ❤️🌸</strong>, 
+          may your birthday be filled with <strong>endless happiness</strong> 😊✨🎈, 
+          <strong>beautiful memories</strong> 📸💖🫶, and moments that make your heart smile 🥹🤍💫. 
+          And as you continue this beautiful new chapter after marriage 💍🏡✨🕊️, 
+          may your journey be blessed with <strong>love 💞❤️, peace 🕊️🌸, understanding 🤝🏻💬</strong>, 
+          and <strong>countless reasons to celebrate every day</strong> 🌷✨🎉.
+        </p>
+
+        <!-- apology note with regret (soft rose bg) -->
+        <div class="bg-white/70 backdrop-blur-sm p-5 rounded-2xl italic border-l-8 border-pink-300 shadow-sm soft-rose-bg">
+          <p class="text-justify not-italic">
+            💔😔 <strong class="text-rose-500">Once again, I'm truly sorry for missing your wedding day.</strong> 💔🥺
+            Some regrets stay in the heart longer than words can explain 🥹❤️‍🩹💭.<strong class="text-rose-500">Deep down, I wished I could have been there to see your smile 😊🌸💖 and witness one of the most beautiful moments of your life 💍✨🤍.</strong>
+            Even though I wasn't there in person, <strong>my thoughts 💭🧠, prayers 🙏🏻🕯️, and heartfelt wishes</strong> were with you throughout that special day 🤍🌷💫.
+          </p>
+        </div>
+
+        <!-- 🌸 INDIRECT CONFESSION: LOVING HER + MISSING HER (from code2) -->
+        <!-- <div class="indirect-love p-5 rounded-xl"></div> -->
+
+        <!-- feelings that time never fades (enhanced with hidden longing) -->
+        <p class="text-justify">
+          <strong class="text-rose-500">Sometimes, the deepest feelings never get spoken aloud.</strong> 🤐💗
+          <br>But there are nights when I look at the moon 🌙✨ and wonder if you're happy,
+          if life is treating you the way you always deserved. 💫
+          <strong>Some people become such a natural part of our thoughts that even silence carries their presence.</strong> 🥹❤️✨
+          <br><br>And there are certain memories that never really leave us. 🎶🌧️
+          A song that plays 🎵, a street we once walked 🚶‍♀️🌆,
+          a laugh that sounds a little too familiar — and the heart quietly revisits moments it still treasures 💔🥹🌸.
+        </p>
+
+        
+        <p class="text-justify mt-3">
+          <strong>I have never told you this directly, but your absence echoes in places I didn't know existed inside me.</strong> 💔🌙 
+          Even though I smile 😊, celebrate your happiness 🎉💖, and genuinely pray for your beautiful new journey 🙏🏻✨.
+          <br><br>Somewhere deep, there's a version of me that still misses the warmth of your presence. 🔥💞 <strong>And that version will always love you, 
+          without expectations, without noise, just as a quiet truth that lives in my heart’s safest corner.</strong> 🥺🤍🕊️
+        </p>
+        
+        <p class="text-justify mt-3">Every time I hear someone mention “special bond” or “unforgettable person”, my heart quietly whispers your name. 🌸🗣️</p>
+
+        <p class="text-justify mt-3">
+          <strong>I don't know if you'll ever truly realize how much your presence meant to me — not because of any words left unsaid, but because some people naturally become a beautiful part of our lives and leave memories that never fade.</strong> 🥹💌
+          <br><br>Carrying those memories feels like holding a beautiful secret that only the heart truly understands 🌙💕🤫💖.
+        </p>
+
+        <p class="text-justify">
+          <strong>And between all these wishes, there is something my heart has quietly carried for a long time.</strong> ⏳❤️<br>
+          Some people enter our lives and become <strong>far more important than they ever realize</strong> ❤️✨🤯.<br>
+          <br>Time moves forward, life changes, and new chapters begin 📖🌸🦋, 
+          but <strong>certain memories never fade</strong> and certain people never stop being special. 💫🥹<br>
+          <br><strong>😢💬 There are moments when an old conversation 💬💕, a familiar memory 📸🌷, or even a simple thought unexpectedly brings a smile 😊🤍 and leaves a quiet ache in the heart at the same time ❤️‍🩹🥹💔.</strong>
+        </p>
+
+        <!-- timeless bond: no need daily talk (plus subtle missing layer) -->
+        <p class="text-justify">
+          No matter how far life takes us 🌍✨🧭,
+          <strong>there will always be a part of me that feels happy whenever you smile 😊💖🫶, prays for your happiness 🙏🏻🤍🕯️, and cherishes the beautiful memories we shared 🌷✨📸.</strong>
+          
+          <br><br>Some bonds don't need daily conversations to stay alive; 💬🚫❤️
+          they continue to live <strong>quietly in memories 💭📔, prayers 🌸🙏, and the heart ❤️🏠</strong>.
+          <br><br>
+          And even though I’ve learned to live with your absence, there’s not a single day I don’t miss the little things — 😔🌙
+          your laugh 😂💗, your silly expressions 🤪✨, the comfort of just knowing you were there. 🫂🥹 <strong>Loving you silently has become my most loyal companion.</strong> 🤍🌙🐾
+        </p>
+
+        <!-- blessing for future chapters -->
+        <p class="text-justify">
+          <strong class="text-rose-500">May your life continue to be filled with love, laughter, beautiful surprises, & endless happiness.</strong>✨😊<br>
+          May every dream find its way to you 🌈✨🌠, and may every chapter ahead be <strong>more beautiful than the last</strong> 💍🎂💖📖.
+        </p>
+
+        <!-- poetic centerpiece line (enhanced with hidden emotion) -->
+        <div class="mt-8 pt-2">
+          <p class="font-bold text-rose-600 text-center text-xl md:text-2xl font-anime leading-relaxed">
+            "Some people become a beautiful part of our story, <br>and their place in the heart never really changes." 💗🥹✨📖
+          </p>
+          <p class="text-center text-base italic text-gray-darkblue mt-2">
+            ~ 🌙 And even when life rewrites the chapters, some loves remain unwritten but never unfelt. ~ 💕🖋️
+          </p>
+        </div>
+
+        <!-- extra heartfelt note + indirect longing wrap-up -->
+        <hr class="divider-cute border-gray-700">
+        <p class="text-justify text-sm md:text-base text-darkblue-700">
+          <strong class="text-rose-500">And one more whisper from my heart :</strong>  🫀✨
+          Through every birthday candle 💌🕯️ and every wedding milestone 💍🎉, 
+          I hope you always feel deeply loved and cherished. 💞👑
+          <br><br>
+          <strong>You deserve a lifetime of peaceful mornings, genuine smiles, and the kind of happiness that stays forever.</strong> 🌅😊♾️
+          Please know that someone, somewhere, carries your well-being in their prayers every single day 🤍🕊️🙏.
+          <br><br>
+          <strong class="text-blue-700">Sometimes, the hardest part is not expressing what the heart feels😔💭. it's learning to quietly carry certain memories while genuinely wishing happiness for someone.</strong> 💔🥹✨
+          <br><br>  
+          <strong class="text-rose-500">And I am genuinely happy for you, Ammai 🥰🌸💍. But a part of me will always cherish the memories, conversations 💬💕, laughter 😊🌷, and moments that once meant so much. 👥✨💖 </strong>
+          <br><br>
+          <strong class="text-black-500">I hope you never feel guilty for moving on; instead, I hope you know that some people never stop wishing the very best for those who once became a beautiful part of their world 🌍❤️. </strong>
+          <br><br>
+          My feelings were never meant to hold you back — they were always meant to <strong>become prayers 🙏🏻🤍, good wishes 🌸✨, and hopes for your happiness beneath the most beautiful skies 🌌💫☁️.</strong>
+        </p>
+        <p class="text-right text-md mt-3 font-medium">
+          <span class="font-anime text-rose-500">Your forever well-wisher (who still misses you a little more than words admit) 💗🥺✨</span>
+          <br>
+          <span class="text-sm text-darkblue-700"><strong>With every heartbeat, a silent prayer for you. 🌸✨</strong></span>
+        </p>
+      </div>
+      <!-- end of code2 content inside finale card -->
+    </div>
+  </section>
+
+</main>
+
+<footer class="bg-navy text-white p-8 text-center">
+  <p>🌸 Some memories never fade, and some people are never forgotten ❤️✨</p>
+  <p class="text-sm opacity-70 mt-2">Sending birthday wishes 🎂, wedding blessings 💍, and silent prayers from afar 🙏🏻🤍. No matter how much time passes, some people will always have a special place in the heart ❤️🥹🌷. ome bonds live quietly in memories 🌷, prayers ✨, and the heart ❤️🥹 — untouched by time.</p>
+  <p class="text-xs opacity-50 mt-4 italic">"You'll always be one of my favorite pages." ❤️📖✨</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+
+<script>
+  AOS.init({ duration: 800, once: true, offset: 100 });
+  lightGallery(document.getElementById('lightgallery'), { selector: 'a', speed: 500, download: false });
+  
+  // AUTO-PLAY MUSIC - Hidden and automatic when site loads
+  const music = document.getElementById("bg-music");
+  music.volume = 1.0;
+  
+  function attemptAutoPlay() {
+    music.play().then(() => {
+      console.log("Music autoplayed successfully");
+      music.volume = 1.0;
+    }).catch((e) => {
+      console.log("Autoplay prevented, waiting for user interaction...");
+      const playOnInteraction = () => {
+        music.play().then(() => {
+          music.volume = 1.0;
+          document.removeEventListener('click', playOnInteraction);
+          document.removeEventListener('touchstart', playOnInteraction);
+        }).catch(() => {});
+      };
+      document.addEventListener('click', playOnInteraction);
+      document.addEventListener('touchstart', playOnInteraction);
+    });
+  }
+  
+  window.addEventListener('load', () => {
+    attemptAutoPlay();
+    music.volume = 1.0;
+    music.loop = true;
+  });
+  
+function createFloatingHeart() {
+    const heart = document.createElement('div');
+
+    const emojis = [
+        '💖','💗','💕','💘','💝','❤️‍🔥','🌸','🩷','❤️','❤️‍🩹',
+        '❣️','💞','💓','🥹','🌷','✨','💫','🫶🏻','🤍','💐',
+        '🎂','💍','👸🏻','🌹','🙏🏻','😊','🌈','🕊️','🎀','💌',
+        '🥰','💭','🌙','🌺','💟','💝','💕','🩵','💜','💛',
+         '🥹','😔','😢','😞','🥺','😶‍🌫️','🥀','🌧️','🫂',
+         '🤍🥹','🙏🏻','🕊️','💌','💭','📸','🎂','💍','👸🏻',
+    ];
+
+    heart.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+
+    heart.className = 'floating-heart';
+    heart.style.left = Math.random() * 90 + '%';
+    heart.style.bottom = '-20px';
+    heart.style.fontSize = (Math.random() * 20 + 24) + 'px';
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 4000);
+}
+
+// Automatically create floating emojis
+setInterval(createFloatingHeart, 600);
+  
+  // Horizontal scroll for hall of fame
+  const scroller = document.getElementById('hall-of-fame-scroller');
+  const leftBtn = document.getElementById('scroll-left-btn');
+  const rightBtn = document.getElementById('scroll-right-btn');
+  if(leftBtn && rightBtn && scroller) {
+    leftBtn.addEventListener('click', () => scroller.scrollBy({ left: -300, behavior: 'smooth' }));
+    rightBtn.addEventListener('click', () => scroller.scrollBy({ left: 300, behavior: 'smooth' }));
+  }
+  
+  // Cherry blossom canvas animation
+  const canvas = document.getElementById('sakura-canvas');
+  let ctx = canvas.getContext('2d');
+  let width = window.innerWidth, height = window.innerHeight;
+  let petals = [];
+  function resizeCanvas() { width = window.innerWidth; height = window.innerHeight; canvas.width = width; canvas.height = height; }
+  window.addEventListener('resize', resizeCanvas);
+  resizeCanvas();
+  class Petal {
+    constructor() { 
+      this.x = Math.random() * width; 
+      this.y = Math.random() * height - height; 
+      this.size = 6 + Math.random() * 12; 
+      this.speedY = 0.8 + Math.random() * 1.8; 
+      this.speedX = -0.4 + Math.random() * 0.8; 
+      this.rotation = Math.random() * 360; 
+      this.rotateSpeed = (Math.random() - 0.5) * 2;
+    }
+    update() { 
+      this.y += this.speedY; 
+      this.x += this.speedX; 
+      this.rotation += this.rotateSpeed;
+      if(this.y > height) this.y = -30; 
+      if(this.x > width) this.x = -30; 
+      if(this.x < -30) this.x = width + 30; 
+    }
+    draw() { 
+      if(ctx) { 
+        ctx.save(); 
+        ctx.translate(this.x, this.y); 
+        ctx.rotate(this.rotation * Math.PI/180); 
+        ctx.fillStyle = '#ffb7c5'; 
+        ctx.beginPath(); 
+        ctx.ellipse(0,0,this.size/2,this.size/1.6,0,0,2*Math.PI); 
+        ctx.fill(); 
+        ctx.fillStyle = '#ff9eb0';
+        ctx.beginPath();
+        ctx.ellipse(0,0,this.size/3,this.size/2.5,0,0,2*Math.PI);
+        ctx.fill();
+        ctx.restore(); 
+      } 
+    }
+  }
+  for(let i=0;i<70;i++) petals.push(new Petal());
+  function animatePetals() { 
+    if(!ctx) return; 
+    ctx.clearRect(0,0,width,height); 
+    petals.forEach(p => { p.update(); p.draw(); }); 
+    requestAnimationFrame(animatePetals); 
+  }
+  animatePetals();
+</script>
+</body>
+</html>
